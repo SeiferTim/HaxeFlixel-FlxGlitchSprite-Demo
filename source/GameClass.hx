@@ -1,6 +1,7 @@
 package;
 
 import flash.Lib;
+import flixel.FlxG;
 import flixel.FlxGame;
 import flixel.FlxState;
 
@@ -21,6 +22,7 @@ class GameClass extends FlxGame
 	{
 		var stageWidth:Int = Lib.current.stage.stageWidth;
 		var stageHeight:Int = Lib.current.stage.stageHeight;
+		FlxG.autoPause = false;
 
 		if (zoom == -1)
 		{
